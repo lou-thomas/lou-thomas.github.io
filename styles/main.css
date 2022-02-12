@@ -1,0 +1,117 @@
+* {
+  background-color: rgb(221, 229, 236);
+  font-family: 'Metrophobic', sans-serif;
+  color: rgba(9, 8, 19, 0.651);
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+  'header header header'
+  'image-bar image-bar image-bar'
+  'main main main'
+  'footer footer footer';;
+  gap: 2rem;
+  }
+
+#header {
+  grid-area: header;
+}
+
+#image-bar {
+  grid-area: image-bar;
+  font-style: italic;
+}
+
+#main {
+  grid-area: main;
+}
+
+#footer {
+  grid-area: footer;
+  display: grid;
+  text-align: right;
+  font-size: small;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  padding-right: 2%;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr; */
+    grid-template-areas: 
+    'header'
+    'image-bar'
+    'main'
+    'footer';
+  }
+}
+
+.welcome {
+  font-size:xx-large;
+  /* margin-top: auto; */
+  font-weight: bold;
+  text-align: center;
+}
+
+.intro {
+  text-align: right;
+}
+
+#images-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  gap: 10px;
+  align-items: center;
+/* One idea to get the items better aligned in here was to try giving them position: absolute; top 1% for example. this would go on the title links for example and on this container it would be important to set position: relative. but when I did this it made the other items e.g. iamges captions and text flaot up cos the whole div seemed to get smaller} */
+}
+
+@media only screen and (max-width: 480px) {
+  #images-div {
+    display: grid;
+    /* grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;  */
+    grid-template-areas:
+      'header'
+      'image-bar'
+      'main'
+      'main'
+      'main'
+      'footer';
+    grid-template-columns: auto;
+  }
+}
+
+.images {
+  display: grid;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+}
+
+.blog-headings {
+  color: rgb(4, 215, 223);
+}
+
+.contents {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 8px;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+}
+
+.page-links {
+  font-size: larger;
+  font-weight: bold;
+}
+
+figcaption {
+  font-weight: lighter;
+  font-size: smaller;
+}
