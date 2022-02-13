@@ -93,6 +93,14 @@
   border-radius: 2%;
 }
 
+.blog-images {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2%;
+}
+
 .blog-headings {
   color: rgb(4, 215, 223);
 }
@@ -114,4 +122,9 @@
 figcaption {
   font-weight: lighter;
   font-size: smaller;
+}
+
+u {
+  font-size: large;
+  font-weight: 300;
 }

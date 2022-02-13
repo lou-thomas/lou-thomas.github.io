@@ -6,7 +6,7 @@
       <meta charset="UTF-8">
        <title>HTML/CSS blog post</title>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link href="styles/main.css" rel="stylesheet">
+       <link href="../styles/main.css" rel="stylesheet">
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
@@ -14,12 +14,50 @@
        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
        <link rel="manifest" href="/site.webmanifest">
+       <style> ol.answers {list-style-type: lower-alpha;} 
+       </style>
 </head>
 
 <body>
-  <p>First blog will be here</p>
-  <a href="../index.html">Home</a>
+    <p>
+      <h1>A night on the town to get to know Margin, Border and Padding</h1>
+    </p>
+      <p>It's 10pm on Saturday night, you've got your favourtie jeans and a nice top on (this is Wellington afterall). A new club has opened and you and your friends are gonna get in and christen that d-floor with all the the latest moves.</p>
+      <p>First up though you need to get past the bouncer, aka Margin.</p>
+      <p>Margin's job is to maintain space and order outside of that club. All the other elements want to get close too, but only Margin controls how close they can or can't get. Nobody wants 1000 wannabe nightclubbers (other elements) to be jammed up right against the nightclub walls (border). They should be respectfully lined up with a safe space (margin) between them and the club.</p>
+      <p>Any good bouncer (margin) knows when to push other elements away to keep space. They also wear the uniform of the club, so it doesn't stand out on its own. I.E. there is no background colour - margins are transparent. Depending on how popular the club, you could have a bouncer just at the main entrance, the main and back entrance or heck on all sides of the club (top, right, bottom, left).</p>
+    <p>One thing to note, the bouncer (margin) can be tough and keep everyone well clear of their precious club (element). But they always have their select favourites who they can choose to sneakily let in. This is called having a negative margin which allows neighbouring elements to get in. That's why you're out with Dana-Sue who is tight with the bouncer. Bouncer gives Dana-Sue a negative margin and next thing you know you and your mates are sidling into the club.</p>
 
+    <div>
+    <img class="blog-images" src="../styles/images/margin as friendly bouncer.png" alt="example of a negative margin on an element"></img>
+    </div>
+
+    <p>
+      <u>Pop quiz</u>
+    </p>
+    <p>You're on the main strip in town and there are lots of clubs close together, there might be a bouncer on the front door of one club and another bouncer on the back door of a neighbouring club (top and bottom margins). If Cool-Club's bouncer says hey, everyone stand back 10px from my club, and Club-for-Cats bouncer says, everyone stand back 20px from my club, then how much space do the wannabe club goers actually have?</p> 
+
+    <ol class="answers">
+      <li>10px</li>
+      <li>20px</li>
+      <li>30px</li>     
+    </ol>
+
+    <img class="blog-images" src="../styles/images/margin battles.png" alt="example of a top and bottom margin on different elements interacting"></img>
+    <p>Correct answer = b</p>
+    <p>That's right, there is no compromise here, the biggest bouncer wins. Everyone has 20px of space since that was the biggest call of the day.
+    </p>
+
+    <p>Ok so you got inside the club (element), but the real reason you're there is totally for that dancefloor (content).</p>
+    <p>Time to meet Padding. Padding is the amount of space between the walls of the club (border) and where the dancefloor action is at. Let's call it the hangout zone. Remember, you're wearing your best get-up so you will be noticed wherever you are inside the hangout zone. I.E. padding can be affected by background-color. 
+    </p>
+    <p>When you adjust padding, it can actually shrink the size of the content (i.e. the bigger the hangout zone, the smaller the dance floor). Or it can expand the size of the element to ensure there is enough space around the d-floor. (Crazy right, padding can make walls move? in fact that is the default behaviour!).
+    </p>
+  <p>Once you're in the club, you ain't ever gonna leave (until you get kicked out). Padding will never go outside of the border.
+  </p>
+
+    </p>
+    <a class="page-links" href="../index.html">Home</a>
 
 </body>
 </html>
