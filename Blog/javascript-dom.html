@@ -12,45 +12,90 @@
        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
        <link rel="manifest" href="/site.webmanifest">
-       <title>Javascript</title>
+       <title>JS and friends</title>
     </head>
-    <!-- 
-Explain what functions are and why they are useful. -->
-    <body>
-      <h1>HTML, CSS, JS and last but not least, the mighty DOM.</h1>
 
-      <h3>HTML and CSS - in the animal kingdom.</h3>
+    <body>
+      <h1>
+        HTML, CSS, JS and last but not least, the mighty DOM.
+      </h1>
+
+      <h3>
+        HTML and CSS - in the animal kingdom.
+      </h3>
+
       <p> 
         If we wanted to David Attenborough up in here for a mo, we might liken HTML to a millipede.  Everyone of those endless legs are in just the right place to make the whole animal make sense and move forward. Its structure is very important, although all those legs are not really made for running, just slithering at a steady pace. CSS however would be more like a leopard. Much faster than HTML and who can deny that leopard print is not the ultimate in fashion and style. When CSS is in town, everyone's gonna be looking their best.
+      </p>
+
         <img class="blog-images" src="../styles/images/gwen-weustink-I3C1sSXj1i8-unsplash.jpg
         " alt="handsome leopard in tree">
         <figcaption>
           Photo by <a href="https://unsplash.com/@aboeka?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gwen Weustink</a> on <a href="https://unsplash.com/s/photos/leopard-with-glasses?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         </figcaption>
-      </p>
-      <h3>It's all about the flow, and sometimes a loop.</h3>
+      
+      <h3>
+        It's all about the flow, and sometimes a loop.
+      </h3>
+
       <p>
         Control flow can be likened to reading a newspaper, generally speaking you will read from page 1, starting top left and working your way down the page. You just wouldn't read a sentence at the end of an article before reading the heading, intro and the meat of the article itself. Control flow is the same. It means code in your file is read and executed in order from the first line to the last. Mostly...dun, dun, dun. 
       </p>
       <p>
-        Back to that newspaper, lets say its Sunday morning and you've read most of the news, in the order in which the Editor laid it out for you. You're having your coffee and now you're up to the good bit, the crosswords. You could look at the crosswords, read all the clues, but then if you don't stop the flow, you'll end up reading the answers on the next few pages before you filled out the crossword. This is where things like conditionals and loops are very important. They tell the program when to pause and pay attention to what the user is doing or check some other conditions before continuing on. In this case you might insert a loop. A loop is a handy way to instruct the program to do somthing multiple times. For example, look at clue 1, think, try to answer it, write your guess in the crossword grid. The loop knows you want to follow the same process for every clue in the puzzle, before carrying on to the other pages and the inevitable answers. You could even have a conditional either in the loop or somewhere else such as just before the page gets turned. In this case you could say, hold up control flow, don't be passing Go here untill this puzzle is complete and correct. Let's loop through each answer provided and see if it's right. IF it is, you may proceed. ELSE if it's not, you must ask grandma for help. A loop in this case means you don't have to write a new line of code to represent checking every clue in the puzzle. You only need to write a single loop which iterates through all the clues itself.
+        Back to that newspaper, let's say it's Sunday morning and you've read most of the news, in the order in which the Editor laid it out for you. You're having your coffee and now you're up to the good bit, the crosswords. You could look at the crosswords, read all the clues, but then if you don't stop the flow, you'll end up reading the answers on the next few pages before you've filled out the crossword. This is where things like conditionals and loops are very important. They tell the program when to pause and pay attention to what the user is doing or check some other conditions before continuing on. In this case you might insert a loop. A loop is a handy way to instruct the program to do something multiple times. For example, look at clue 1, think, try to answer it, write your guess in the crossword grid. The loop knows you want to follow the same process for every clue in the puzzle, before carrying on to the other pages and the inevitable answers. You could even have a conditional either in the loop or somewhere else such as just before the page gets turned. In this case you could say, hold up control flow, don't be passing Go here until this puzzle is complete and correct. Let's loop through each answer provided and see if it's right. IF it is, you may proceed. ELSE if it's not, you must ask grandma for help. A loop in this case means you don't have to write a new line of code to represent checking every clue in the puzzle. You only need to write a single loop which iterates through all the clues itself.
       </p>
-      <h3>THE. DOM.</h3>
+
+      <h3>
+        THE. DOM.
+      </h3>
       <p>
-        So,  the DOM is something that represents a document as objects and nodes. When first reading about this, here is what I noted down. 
-         <!-- in a way that programming languages easily interact with the web page. --> -->
+        So, the DOM is something that represents a document as objects and nodes. When first reading about this, here is what I noted down. 
       </p>
       <p>
-        When you open your broswer, the whole shablam is a WINDOW, Window is the grandest of daddies. The next grandest is the DOCUMENT. The document is your whole page.
-        From there, everything keeps filtering down in a tree like structure, with only 1 parent for each element. 
-        You can use the DOM to pick out elements, depending on what time of element you're looking for will determine how you search for it. For example let's say you've got a blog site, but you're a newbie coding student so your blog is actually pretty fugly. You've since learned about how to apply color styles so you want to update every single h3 element in your site from boring black to racey red. (Luckily you weren't so newbie as to not give your h3's a class - "h3"). If you ask THE. DOM. in just the right way, dear document, document.getElementsByClassName('h3')
+        When you open your browser, the whole shablam is a WINDOW, Window is the grandest of daddies. The next grandest is the DOCUMENT. The document is your whole page.
+        From there, everything keeps filtering down in a tree-like structure, with only 1 parent for each element. 
+        You can use the DOM to pick out elements. Depending on what type of element you're looking for will determine how you search for it. For example let's say you've got a blog site, but you're a newbie coding student so your blog is actually pretty fugly. You've since learned about how to apply color styles so you want to update every single h3 element in your site from boring black to racey red. (Luckily you weren't so newbie as to not give your h3's a class - "h3"). If you ask THE. DOM. in just the right way, dear document, document.getElementsByClassName('h3')
         You can then tell it to apply a new style to all elements of that class in one go. Voila your REDy to go.
       </p>
-      <h3>Is your data private??</h3>
-      <!-- Explain the difference between accessing data from arrays and objects. -->
-      <p>Na probably not, just depends how it's stored as to how we can access it 😝.
-        
+      <h3>
+        Is your data private??
+      </h3>
+      <p>
+        Na probably not, just depends how it's stored as to how we can access it 😝.
+        Both objects and arrays are good little storage units. Objects are like a cupboard where you've kept everything since you were 10. When you want to get something out, you kind of call it by describing where it is. Hey code, find me that old  wetsuit which is in the outdoor equipment section. While you're there, can you magically change it's size to large?
+      </p> 
+        <code>
+          outdoorEquipment.wetsuit.size = large
+        </code>
+           
+      <p>
+        Arrays are more like a set of drawers where each drawer is numbered, starting at 0. So if our drawers look like this:
       </p>
+      <p>
+        <code>
+          drawer = ['socks', 't-shirts', 'pants', 'jerseys']
+        </code>
+      </p>
+      <p>
+        and we want to get a jersey from the 3rd drawer, we just holler:
+      </p>
+        <p>
+          <code>
+            drawer[3]
+          </code>
+        </p> 
+        
+        <h3>
+          Looks good, but is it functional?
+        </h3>
+
+        <p>
+          So you've got your clothes from the storage, but you remembered you have to fold it, or wash it, or sell it even. Here's where we get cosy with functions. You can basically describe any set of actions that must happen each time you call that function. So every time I get some socks from the drawer, I would then call a function that checks if they are a match. Unlucky for me, the first 2 socks I grabbed are not a pair. But lucky for me, I wrote a function, so I don't have to check them all myself, each time the socks come out, the function will check for me if they are a pair.  🧦🧦🧦
+        </p>
+        
+        <p>
+          Thanks again for dropping by. Feel free to like and subscribe. 
+        </p>
 
       <div>
         <a class="page-links" href="../index.html">Home</a>
