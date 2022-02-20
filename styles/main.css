@@ -132,3 +132,9 @@ u {
   font-size: large;
   font-weight: 300;
 }
+
+.article-links {
+  font-size: medium;
+  font-weight: bolder;
+  color: cornflowerblue;
+}
