@@ -69,17 +69,24 @@ p {
   padding-top: 5px;
 }
 
+h1 {
+  color: black;
+  text-align: center;
+  margin-top: 2em;
+}
+
 h3 {
   margin-top: 3em;
   padding-top: 3px;
   color: black;
 }
 
-h1 {
-  color: black;
-  text-align: center;
-  margin-top: 2em;
+h2 {
+  margin: 2em;
+  padding: 1em;
 }
+
+
 
 u {
   font-size: large;
