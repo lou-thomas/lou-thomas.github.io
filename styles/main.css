@@ -1,8 +1,12 @@
 * {
-  background-color: rgb(221, 229, 236);
+  /* background-color: rgb(221, 229, 236); */
   font-family: 'Metrophobic', sans-serif;
   color: rgba(9, 8, 19, 0.651);
   margin: 5px;
+}
+
+body {
+    background-color: rgb(221, 229, 236);
 }
 
 .container {
@@ -36,19 +40,6 @@
   padding-top: 5%;
   padding-bottom: 3%;
   padding-right: 2%;
-}
-
-@media only screen and (max-width: 480px) {
-  .container {
-    display: grid;
-    /* grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr; */
-    grid-template-areas: 
-    'header'
-    'image-bar'
-    'main'
-    'footer';
-  }
 }
 
 .welcome {
@@ -86,13 +77,10 @@ h2 {
   padding: 1em;
 }
 
-
-
 u {
   font-size: large;
   font-weight: 300;
 }
-
 
 #images-div {
   display: grid;
@@ -101,21 +89,6 @@ u {
   gap: 10px;
   align-items: center;
 /* One idea to get the items better aligned in here was to try giving them position: absolute; top 1% for example. this would go on the title links for example and on this container it would be important to set position: relative. but when I did this it made the other items e.g. iamges captions and text flaot up cos the whole div seemed to get smaller} */
-}
-
-@media only screen and (max-width: 480px) {
-  #images-div {
-    display: grid;
-    /* grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;  */
-    grid-template-areas:
-      'header'
-      'image-bar'
-      'main'
-      'main'
-      'main'
-      'footer';
-    grid-template-columns: auto;
-  }
 }
 
 .images {
@@ -176,4 +149,43 @@ figcaption {
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    text-align: center;
+  }
+  body {
+    background-color: blanchedalmond;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: rgba(216, 144, 208, 0.51);
+  }
+  .container {
+    display: grid;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr; */
+    grid-template-areas: 
+    'header'
+    'image-bar'
+    'main'
+    'footer';
+  }
+  #images-div {
+    display: grid;
+    grid-template-areas:
+      'header'
+      'image-bar'
+      'main'
+      'main'
+      'main'
+      'footer';
+    grid-template-columns: auto;
+    }
+    .intro {
+      text-align: center;
+    }
 }
