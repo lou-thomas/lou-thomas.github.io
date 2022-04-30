@@ -151,10 +151,21 @@ figcaption {
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .intro {
+    text-align: center;
+  }
+
+  body {
+    background-color: rgb(195, 239, 234);
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .intro {
     text-align: center;
   }
+
   body {
     background-color: blanchedalmond;
   }
@@ -164,16 +175,18 @@ figcaption {
   body {
     background-color: rgba(216, 144, 208, 0.51);
   }
+
   .container {
     display: grid;
     /* grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr; */
-    grid-template-areas: 
+    grid-template-areas:
     'header'
     'image-bar'
     'main'
     'footer';
   }
+
   #images-div {
     display: grid;
     grid-template-areas:
@@ -185,7 +198,8 @@ figcaption {
       'footer';
     grid-template-columns: auto;
     }
-    .intro {
-      text-align: center;
+
+  .intro {
+    text-align: center;
     }
 }
